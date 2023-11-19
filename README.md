@@ -1,4 +1,4 @@
-# Project Name
+# Python Faker Blog Provider
 
 Python Faker Blog Content Provider
 
