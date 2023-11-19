@@ -20,6 +20,12 @@ class BlogProvider(BaseProvider):
 
         return {"tag": tag, "slug": slugify(tag)}
 
+    def article_tags(self, nb: int = 3) -> list[str]:
+        return [self.article_tag() for _ in range(nb)]
+
+    def article_tags_and_slug(self, nb: int = 3) -> list[dict[str, str]]:
+        return [self.article_tag_and_slug() for _ in range(nb)]
+
     def article_category(self) -> str:
         return self.random_element(text.categories)
 
