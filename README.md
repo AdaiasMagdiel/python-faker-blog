@@ -14,6 +14,14 @@ Coming soon, for now you can clone this repository and use in your project:
 git clone https://github.com/AdaiasMagdiel/python-faker-blog
 ```
 
+## Tests
+
+Use the pytest to test the project:
+
+```bash
+pytest -vvsx
+```
+
 ## Usage
 
 Import the `Faker` class from the `faker` package and initialize an instance of it. Then, import the `BlogProvider` class from the `faker_blog` module. Finally, add the `BlogProvider` to the instance of `Faker`.
