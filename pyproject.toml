@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "faker_blog_provider"
-version = "0.0.1a6"
+version = "0.0.1"
 authors = [
   { name="Adaías Magdiel", email="adaiasmagdiell@gmail.com" },
 ]
