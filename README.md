@@ -8,15 +8,15 @@ This Python package provides a Faker provider that generates fake blog content i
 
 ## Installation
 
-Coming soon, for now you can clone this repository and use in your project:
+Use pip for install from [source in PyPI](https://pypi.org/project/faker-blog-provider/):
 
 ```bash
-git clone https://github.com/AdaiasMagdiel/python-faker-blog
+pip install faker-blog-provider
 ```
 
 ## Tests
 
-Use the pytest to test the project:
+Use pytest to test the project:
 
 ```bash
 pytest -vvsx
