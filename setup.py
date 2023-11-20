@@ -1,19 +1,25 @@
 from setuptools import setup, find_packages
+from pathlib import Path
+
+README = Path(__file__).joinpath('README.md').read_text()
+VERSION = Path(__file__).joinpath('faker_blog/VERSION').read_text()
 
 setup(
     name='faker-blog-provider',
-    version='1.0.1',
-    packages=find_packages(),
+    version=VERSION,
+    packages=find_packages(exclude=["tests", "build"]),
     install_requires=[
         'faker',
     ],
     author='Adaías Magdiel',
     author_email='adaiasmagdiell@gmail.com',
-    description='Python faker blog content provider in Brazilian Portuguese',
-    long_description=
+    description=
     'Generate fictional blog data for your projects such as titles, tags, images, and much more.',
+    long_description=README,
     long_description_content_type='text/markdown',
     url='https://github.com/AdaiasMagdiel/python-faker-blog',
+    license="MIT",
+    license_files=["LICENSE"],
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
