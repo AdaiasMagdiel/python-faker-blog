@@ -1,12 +1,12 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "faker_blog_provider"
-version = "0.0.2"
+dynamic = ["version", "dependencies"]
 authors = [
-  { name="Adaías Magdiel", email="adaiasmagdiell@gmail.com" },
+  { name="Adaías Magdiel", email="eu@adaiasmagdiel.com" },
 ]
 description = "A Faker provider that generates fake blog content in Brazilian Portuguese as blog titles, blog posts, images, tags, and more."
 keywords = ["faker", "provider", "blog content", "fake blog data", "fake article content"]
@@ -27,6 +27,9 @@ classifiers = [
     "Topic :: Utilities"
 ]
 
+[tool.setuptools.dynamic]
+version = {attr = "faker_blog.__version__"}
+dependencies = {file = ["requirements.txt"]}
 
 [project.urls]
 Homepage = "https://github.com/AdaiasMagdiel/python-faker-blog"
