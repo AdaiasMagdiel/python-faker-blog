@@ -1,5 +1,8 @@
 # Python Faker Blog Provider
 
+![GitHub](https://img.shields.io/github/license/AdaiasMagdiel/python-faker-blog)
+![PyPI](https://img.shields.io/pypi/v/faker-blog-provider)
+
 Python Faker Blog Content Provider
 
 ## Description
